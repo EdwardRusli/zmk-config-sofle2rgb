@@ -19,8 +19,6 @@
 #define RAISE 2
 #define ADJUST 3
 
-
-
 &mmv {
     acceleration-exponent = <0>;
     trigger-period-ms = <1>;
@@ -42,7 +40,7 @@
 
         adjust_layer {
             if-layers = <2 3>;
-            then-layer = <5>;
+            then-layer = <6>;
         };
     };
 
@@ -209,7 +207,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans           &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans
+                &trans  &trans  &mo 5   &trans  &trans    &trans  &trans  &trans          &trans          &trans
+            >;
+        };
+
+        mouse_fast {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
