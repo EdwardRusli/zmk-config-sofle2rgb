@@ -133,7 +133,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         qwerty {
@@ -156,7 +156,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower_layer {
@@ -180,7 +180,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
@@ -203,7 +203,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         mouse {
