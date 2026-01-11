@@ -15,7 +15,6 @@
 #define LOWER 1
 #define RAISE 2
 #define ADJUST 3
-
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 900  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
@@ -40,7 +39,7 @@
 
         adjust_layer {
             if-layers = <2 3>;
-            then-layer = <5>;
+            then-layer = <6>;
         };
     };
 
@@ -207,7 +206,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans           &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans
+                &trans  &trans  &mo 5   &trans  &trans    &trans  &trans  &trans          &trans          &trans
+            >;
+        };
+
+        mouse_fast {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
