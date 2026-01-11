@@ -27,7 +27,7 @@
 
 &mmv_input_listener {
     mouse_move {
-        layers = <9>;
+        layers = <5>;
         input-processors = <&zip_xy_scaler 3 1>;
         process-next;
     };
