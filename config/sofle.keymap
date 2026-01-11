@@ -33,6 +33,10 @@
     };
 };
 
+&sensors {
+    triggers-per-rotation = <40>;
+};
+
 / {
     // Activate ADJUST layer by pressing raise and lower
 
