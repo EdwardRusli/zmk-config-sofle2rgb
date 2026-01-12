@@ -33,9 +33,9 @@
     };
 };
 
-&sensors { triggers-per-rotation = <21>; };
+&sensors { triggers-per-rotation = <20>; };
 
-&left_encoder { steps = <84>; };
+&left_encoder { steps = <80>; };
 
 / {
     // Activate ADJUST layer by pressing raise and lower
