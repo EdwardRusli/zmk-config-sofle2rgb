@@ -38,6 +38,16 @@
 &left_encoder { steps = <80>; };
 
 / {
+    behaviors {
+        raise_layer_holdtap_tog: raise_layer_holdtap_tog {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RAISE_LAYER_HOLDTAP_TOG";
+            bindings = <&mo>, <&tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+    };
     // Activate ADJUST layer by pressing raise and lower
 
     conditional_layers {
