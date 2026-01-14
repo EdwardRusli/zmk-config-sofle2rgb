@@ -71,66 +71,78 @@
         underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <15 14>;
+            layers = <0>;
         };
 
         minus {
             bindings = <&kp MINUS>;
             key-positions = <26 27>;
+            layers = <0>;
         };
 
         escape {
             bindings = <&kp ESCAPE>;
             key-positions = <13 14>;
+            layers = <0>;
         };
 
         win_screenshot {
             bindings = <&kp LG(LS(S))>;
             key-positions = <37 38>;
+            layers = <0>;
         };
 
         equals {
             bindings = <&kp EQUAL>;
             key-positions = <38 39>;
+            layers = <0>;
         };
 
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <25 26>;
+            layers = <0>;
         };
 
         l_parenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <28 29>;
             timeout-ms = <20>;
+            layers = <0>;
         };
 
         l_brace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <16 17>;
             timeout-ms = <20>;
+            layers = <0>;
         };
 
         l_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <41 40>;
+            layers = <0>;
         };
 
         r_parenthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <31 30>;
             timeout-ms = <20>;
+            layers = <0>;
         };
 
         r_brace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <19 18>;
             timeout-ms = <20>;
+            layers = <0>;
         };
 
         r_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <45 44>;
             timeout-ms = <20>;
+            layers = <0>;
         };
 
         mouse {
@@ -151,6 +163,7 @@
             bindings = <&kp LC(LS(Z))>;
             key-positions = <40 39 38>;
             timeout-ms = <20>;
+            layers = <0>;
         };
     };
 
