@@ -45,7 +45,7 @@
 };
 
 &left_encoder {
-    steps = <88>;
+    steps = <76>;
     
 };
 
