@@ -40,14 +40,12 @@
 };
 
 &sensors {
-    triggers-per-rotation = <20>;
+    triggers-per-rotation = <22>;
 
 };
 
 &left_encoder {
-    a-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH)>;
-    b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH)>;
-    steps = <80>;
+    steps = <88>;
     
 };
 
