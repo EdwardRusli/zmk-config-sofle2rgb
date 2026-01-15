@@ -59,8 +59,6 @@
             label = "INC_DEC_SCROLL";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
-
-            tap-ms = <500>;
         };
     };
 
@@ -273,15 +271,15 @@
         mouse {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &msc MOVE_X(50)    &mmv MOVE_UP    &msc MOVE_X(-50)   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
 &mo 5   &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB1        &mkp MB2        &trans           &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans
             >;
 
             sensor-bindings =
-                <&inc_dec_scroll SCRL_DOWN SCRL_UP>,
-                <&inc_dec_scroll SCRL_DOWN SCRL_UP>;
+                <&inc_dec_scroll MOVE_X(-50) MOVE_X(50)>,
+                <&inc_dec_scroll MOVE_X(-50) MOVE_X(50)>;
         };
 
         mouse_fast {
