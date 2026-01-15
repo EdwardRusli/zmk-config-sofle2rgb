@@ -49,10 +49,10 @@
         };
 
         inc_dec_scroll: inc_dec_scroll {
-            compatible = "zmk,behavior-sensor-rotate";
+            compatible = "zmk,behavior-sensor-rotate-var";
             label = "INC_DEC_SCROLL";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
         };
     };
 
@@ -271,7 +271,7 @@
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans
             >;
 
-            sensor-bindings = <&inc_dec_scroll>, <&inc_dec_scroll>;
+            sensor-bindings = <&none>, <&none>;
         };
 
         mouse_fast {
