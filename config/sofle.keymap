@@ -5,7 +5,7 @@
  */
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 900  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 600    // default: 10 (If you enabled smooth scrolling then you will want to use the same MOVE_UP, MOVE_DOWN, etc values instead of the smaller SCRL_* parameters for more sensible scroll speeds.)
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 1500    // default: 10 (If you enabled smooth scrolling then you will want to use the same MOVE_UP, MOVE_DOWN, etc values instead of the smaller SCRL_* parameters for more sensible scroll speeds.)
 
 #include <input/processors.dtsi>
 #include <behaviors.dtsi>
@@ -60,7 +60,7 @@
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
 
-            tap-ms = <25>;
+            tap-ms = <10>;
         };
     };
 
