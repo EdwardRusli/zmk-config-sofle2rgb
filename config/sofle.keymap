@@ -40,12 +40,12 @@
 };
 
 &sensors {
-    triggers-per-rotation = <23>;
+    triggers-per-rotation = <20>;
 
 };
 
 &left_encoder {
-    steps = <92>;
+    steps = <84>;
     
 };
 
