@@ -5,7 +5,7 @@
  */
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 900  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 600    // default: 10 (If you enabled smooth scrolling then you will want to use the same MOVE_UP, MOVE_DOWN, etc values instead of the smaller SCRL_* parameters for more sensible scroll speeds.)
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // default: 10 (If you enabled smooth scrolling then you will want to use the same MOVE_UP, MOVE_DOWN, etc values instead of the smaller SCRL_* parameters for more sensible scroll speeds.)
 
 #include <input/processors.dtsi>
 #include <behaviors.dtsi>
@@ -25,11 +25,11 @@
     trigger-period-ms = <1>;
 };
 
-// &msc {
-//     acceleration-exponent = <0>;
-//     trigger-period-ms = <1>;
-//     time-to-max-speed-ms = <3>;
-// };
+&msc {
+    acceleration-exponent = <0>;
+    trigger-period-ms = <1>;
+    time-to-max-speed-ms = <1>;
+};
 
 &mmv_input_listener {
     mouse_move {
