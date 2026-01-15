@@ -40,12 +40,12 @@
 };
 
 &sensors {
-    triggers-per-rotation = <22>;
+    triggers-per-rotation = <23>;
 
 };
 
 &left_encoder {
-    steps = <88>;
+    steps = <92>;
     
 };
 
@@ -203,7 +203,8 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp LC(LA(LS(EQUAL))) LS(LA(LC(MINUS)))>;
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                //<&inc_dec_kp LC(LA(LS(EQUAL))) LS(LA(LC(MINUS)))>;
         };
 
         qwerty {
