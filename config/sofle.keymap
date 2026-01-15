@@ -47,6 +47,13 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        inc_dec_scroll: inc_dec_scroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "INC_DEC_SCROLL";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+        };
     };
 
     // Activate ADJUST layer by pressing raise and lower
@@ -258,13 +265,13 @@
         mouse {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
 &mo 5   &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB1        &mkp MB2        &trans           &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_scroll>, <&inc_dec_scroll>;
         };
 
         mouse_fast {
