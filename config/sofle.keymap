@@ -180,6 +180,11 @@
             timeout-ms = <20>;
             layers = <0>;
         };
+
+        gaming_tog {
+            bindings = <&tog 2>;
+            key-positions = <2 3>;
+        };
     };
 
     keymap {
