@@ -122,14 +122,12 @@
         l_parenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <28 29>;
-            timeout-ms = <20>;
             layers = <0>;
         };
 
         l_brace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <16 17>;
-            timeout-ms = <20>;
             layers = <0>;
         };
 
@@ -142,21 +140,18 @@
         r_parenthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <31 30>;
-            timeout-ms = <20>;
             layers = <0>;
         };
 
         r_brace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <19 18>;
-            timeout-ms = <20>;
             layers = <0>;
         };
 
         r_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <45 44>;
-            timeout-ms = <20>;
             layers = <0>;
         };
 
@@ -170,14 +165,12 @@
         undo {
             bindings = <&kp LC(Z)>;
             key-positions = <40 39>;
-            timeout-ms = <20>;
             layers = <0>;
         };
 
         redo {
-            bindings = <&kp LC(LS(Z))>;
+            bindings = <&kp LC(Y)>;
             key-positions = <40 39 38>;
-            timeout-ms = <20>;
             layers = <0>;
         };
 
@@ -193,11 +186,11 @@
         default {
             display-name = "default";
             bindings = <
-&kp ESCAPE        &kp NUMBER_1  &kp N2    &kp NUMBER_3  &kp NUMBER_4  &kp N5                           &kp N6  &kp N7         &kp N8        &kp N9          &kp N0    &kp DELETE
-&kp TAB           &kp Q         &kp W     &kp F         &kp P         &kp B                            &kp J   &kp L          &kp U         &kp Y           &kp SEMI  &kp BSPC
-&kp LEFT_SHIFT    &kp A         &kp R     &kp S         &kp T         &kp G                            &kp M   &kp N          &kp E         &kp I           &kp O     &kp SQT
-&kp LEFT_CONTROL  &kp Z         &kp X     &kp C         &kp D         &kp V   &kp C_MUTE    &none      &kp K   &kp H          &kp COMMA     &kp DOT         &kp FSLH  &mo 5
-                                &kp CAPS  &kp LGUI      &kp LEFT_ALT  &mo 3   &kp SPACE     &kp ENTER  &mo 4   &kp BACKSPACE  &kp LEFT_WIN  &studio_unlock
+&kp ESCAPE        &kp NUMBER_1  &kp N2    &kp NUMBER_3  &kp NUMBER_4  &kp N5                                   &kp N6  &kp N7         &kp N8        &kp N9          &kp N0    &kp DELETE
+&kp TAB           &kp Q         &kp W     &kp F         &kp P         &kp B                                    &kp J   &kp L          &kp U         &kp Y           &kp SEMI  &kp BSPC
+&kp LEFT_SHIFT    &kp A         &kp R     &kp S         &kp T         &kp G                                    &kp M   &kp N          &kp E         &kp I           &kp O     &kp SQT
+&kp LEFT_CONTROL  &kp Z         &kp X     &kp C         &kp D         &kp V           &kp C_MUTE    &none      &kp K   &kp H          &kp COMMA     &kp DOT         &kp FSLH  &mo 5
+                                &kp CAPS  &kp LGUI      &kp LEFT_ALT  &lt 3 CAPSLOCK  &kp SPACE     &kp ENTER  &mo 4   &kp BACKSPACE  &kp LEFT_WIN  &studio_unlock
             >;
 
             sensor-bindings =
